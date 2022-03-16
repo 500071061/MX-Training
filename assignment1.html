@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            //Task-1 
+            document.write("Task 1");
+            document.write("<br/>");
+            for(var i=1;i<=4;i++){
+    
+                for(var j=i;j<=4;j++){
+                    document.write("*")
+                }
+                document.write("<br>")
+            }
+            for(var i=2;i<=4;i++){
+    
+                for(var j=1;j<=i;j++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+        document.write("<br>");
+
+        //Task-2
+        document.write(" Task 2 (To print Odd elements in a array)");
+        document.write("<br>");
+        var arr =[];
+        for(i=1;i<=20;i++){
+            if(i%2!=0)
+            arr.push(i);
+        }
+        document.write(arr);
+        document.write("<br>");
+
+
+        //Task-3
+        document.write("<br/>");
+        document.write("Task 3 Banking App");
+        document.write("<br>");
+        function banking(){
+            this.bal=0;
+            this.opena = function(openb){
+                this.bal=openb;
+                document.write("Opening Balance:"+this.bal);
+            }
+            this.withdraw = function(amount){
+                if(amount>this.bal){
+                    document.write("Not enough balance.");
+                }
+                else{
+                    this.bal=this.bal-amount;
+                    document.write("Updated balance is: " + this.bal);
+                }
+            }
+            this.deposit = function(amount){
+                this.bal=this.bal+amount;
+                document.write("Updated balance is:" + this.bal);
+            }
+        }
+        var acc = new banking();
+        acc.opena(1000);
+        document.write("<br>");
+        acc.withdraw(800);
+        document.write("<br>");
+        acc.withdraw(700);
+        document.write("<br>");
+        acc.deposit(1000);
+        document.write("<br>");
+        document.write("<br>");
+
+        //Task-4 
+        document.write("Task 4");
+        document.write("<br />");
+        //document.write("<br />");
+
+        function arrayOfTasks() {
+            this.taskArray = ["Kaushal", "Manik", "Jai", "Saurabh", "Aman"];
+            document.write(this.taskArray);
+
+            this.remove = function(i) {
+                document.write("<br />");
+                //document.write("<br />");
+                this.taskArray.splice(i, 2);
+                document.write("Updated Array is: ");
+                document.write("<br />");
+                document.write(this.taskArray);
+            }
+        }
+        var obj = new arrayOfTasks();
+        obj.remove(2);
+        </script>
+    </head>
+</html>

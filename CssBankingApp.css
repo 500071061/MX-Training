@@ -1,0 +1,63 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+body {
+  color: #faf9f9;
+  font-family: 'Lato', sans-serif;
+  padding: 1em;
+  line-height: 1.5;
+}
+
+.flex {
+  
+  background-image: url('../Image/banking.jpg');
+  background-size: cover;
+  justify-content: center;
+  align-items:center;
+  display: flex;
+  flex-wrap:wrap;
+}
+.element-center {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+
+
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    margin-top: 0.3em;
+}
+
+#inputs {
+    padding: 10px;
+}
+
+input,
+button {
+  font-size: .85em;
+  padding: .65em 1em;
+  border-radius: .3em;
+  outline: 0;
+}
+input {
+  border: 2px solid #dcdcdc;
+  margin-right: 1em;
+}
+
+button {
+    color: white;
+    background: #50bc6b;
+    border: solid 1px;
+    border-color: rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+label {
+    font-size: 2em;
+}
+
+#btnDeposit, #btnWithdraw , #btnCreate{
+    width: 8em;
+}
